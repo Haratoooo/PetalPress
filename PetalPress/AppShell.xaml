@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<Shell
-    x:Class="PetalPress.AppShell"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:PetalPress"
-    Title="PetalPress">
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:onboarding="clr-namespace:PetalPress.Views.Onboarding"
+       xmlns:auth="clr-namespace:PetalPress.Views.Auth"
+       xmlns:home="clr-namespace:PetalPress.Views.Home"
+       x:Class="PetalPress.AppShell">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <ShellContent Route="OnboardingPage" ContentTemplate="{DataTemplate onboarding:OnboardingPage}" />
+    <ShellContent Route="GetStartedPage" ContentTemplate="{DataTemplate auth:GetStartedPage}" />
+    <ShellContent Route="SignUpPage" ContentTemplate="{DataTemplate auth:SignUpPage}" />
+    <ShellContent Route="SignInPage" ContentTemplate="{DataTemplate auth:SignInPage}" />
+    <ShellContent Route="HomePage" ContentTemplate="{DataTemplate home:StaticHomePage}" />
 </Shell>

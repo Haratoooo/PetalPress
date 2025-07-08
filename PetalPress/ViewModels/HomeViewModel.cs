@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PetalPress.ViewModels
 {
-    internal class MoodViewModel
+    internal class HomeViewModel
     {
     }
 }

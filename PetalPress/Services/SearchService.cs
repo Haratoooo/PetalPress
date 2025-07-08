@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetalPress.ViewModels
+namespace PetalPress.Services
 {
-    internal class PreferencesViewModel
+    internal class SearchService
     {
     }
 }

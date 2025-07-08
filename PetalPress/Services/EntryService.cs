@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetalPress.Views.Onboarding
+namespace PetalPress.Services
 {
-    public partial class OnboardingPage
+    internal class EntryService
     {
     }
 }
