@@ -1,13 +1,33 @@
-<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:onboarding="clr-namespace:PetalPress.Views.Onboarding"
-       xmlns:auth="clr-namespace:PetalPress.Views.Auth"
-       xmlns:home="clr-namespace:PetalPress.Views.Home"
-       x:Class="PetalPress.AppShell">
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:onboarding="clr-namespace:PetalPress.Views.Onboarding"
+    xmlns:auth="clr-namespace:PetalPress.Views.Auth"
+    x:Class="PetalPress.AppShell"
+    Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent Route="OnboardingPage" ContentTemplate="{DataTemplate onboarding:OnboardingPage}" />
-    <ShellContent Route="GetStartedPage" ContentTemplate="{DataTemplate auth:GetStartedPage}" />
-    <ShellContent Route="SignUpPage" ContentTemplate="{DataTemplate auth:SignUpPage}" />
-    <ShellContent Route="SignInPage" ContentTemplate="{DataTemplate auth:SignInPage}" />
-    <ShellContent Route="HomePage" ContentTemplate="{DataTemplate home:StaticHomePage}" />
+    <!-- Initial route (Splash screen) -->
+    <ShellContent Route="SplashPage"
+                  ContentTemplate="{DataTemplate onboarding:SplashPage}" />
+
+    <!-- Onboarding carousel -->
+    <ShellContent Route="OnboardingPage"
+                  ContentTemplate="{DataTemplate onboarding:OnboardingPage}" />
+
+    <!-- Get Started screen -->
+    <ShellContent Route="GetStartedPage"
+                  ContentTemplate="{DataTemplate auth:GetStartedPage}" />
+
+    <!-- Auth routes -->
+    <ShellContent Route="SignInPage"
+                  ContentTemplate="{DataTemplate auth:SignInPage}" />
+
+    <ShellContent Route="SignUpPage"
+                  ContentTemplate="{DataTemplate auth:SignUpPage}" />
+
+    <!-- Optional: After sign up -->
+    <ShellContent Route="WelcomeMessagePage"
+                  ContentTemplate="{DataTemplate onboarding:WelcomeMessagePage}" />
+
 </Shell>

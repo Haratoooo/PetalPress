@@ -1,12 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows.Input;
+using Microsoft.Maui.Controls;
 
 namespace PetalPress.ViewModels
 {
-    internal class AuthViewModel
+    public class AuthViewModel
     {
+        public ICommand NavigateToSignUp { get; set; }
+        public ICommand NavigateToSignIn { get; set; }
+
+        public AuthViewModel()
+        {
+            NavigateToSignUp = new Command(async () =>
+            {
+                await Shell.Current.GoToAsync("//SignUpPage");
+            });
+
+            NavigateToSignIn = new Command(async () =>
+            {
+                await Shell.Current.GoToAsync("//SignInPage");
+            });
+        }
     }
 }

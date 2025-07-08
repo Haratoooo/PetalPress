@@ -6,10 +6,10 @@
         <Label Text="Let’s Get Started" FontSize="30" FontAttributes="Bold" TextColor="White"/>
         <Label Text="Welcome! Choose how you’d like to continue" FontSize="18" TextColor="White" Margin="0,10,0,20"/>
 
-        <Button Text="Continue with Google" />
-        <Button Text="Continue with Apple ID" />
+        <Button Text="Continue with Google" Margin="0,5"/>
+        <Button Text="Continue with Apple ID" Margin="0,5"/>
         <BoxView HeightRequest="1" Color="Gray" Margin="0,20,0,20"/>
-        <Button Text="Sign up" Command="{Binding NavigateToSignUp}"/>
-        <Button Text="Sign in" Command="{Binding NavigateToSignIn}"/>
+        <Button Text="Sign up" Command="{Binding NavigateToSignUp}" Margin="0,5"/>
+        <Button Text="Sign in" Command="{Binding NavigateToSignIn}" Margin="0,5"/>
     </StackLayout>
 </ContentPage>
