@@ -20,14 +20,14 @@
                   ContentTemplate="{DataTemplate auth:GetStartedPage}" />
 
     <!-- Auth routes -->
-    <ShellContent Route="SignInPage"
-                  ContentTemplate="{DataTemplate auth:SignInPage}" />
+    <!-- <ShellContent Route="SignInPage"
+                  ContentTemplate="{DataTemplate auth:SignInPage}" /> -->
 
-    <ShellContent Route="SignUpPage"
-                  ContentTemplate="{DataTemplate auth:SignUpPage}" />
+    <!-- <ShellContent Route="SignUpPage"
+                  ContentTemplate="{DataTemplate auth:SignUpPage}" /> -->
 
     <!-- Optional: After sign up -->
-    <ShellContent Route="WelcomeMessagePage"
-                  ContentTemplate="{DataTemplate onboarding:WelcomeMessagePage}" />
+    <!-- <ShellContent Route="WelcomeMessagePage"
+                  ContentTemplate="{DataTemplate onboarding:WelcomeMessagePage}" /> -->
 
 </Shell>

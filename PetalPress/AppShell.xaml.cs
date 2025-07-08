@@ -13,9 +13,9 @@ public partial class AppShell : Shell
         Routing.RegisterRoute("SplashPage", typeof(SplashPage));
         Routing.RegisterRoute("OnboardingPage", typeof(OnboardingPage));
         Routing.RegisterRoute("GetStartedPage", typeof(GetStartedPage));
-        Routing.RegisterRoute("SignInPage", typeof(SignInPage));
-        Routing.RegisterRoute("SignUpPage", typeof(SignUpPage));
-        Routing.RegisterRoute("WelcomeMessagePage", typeof(WelcomeMessagePage));
+        //Routing.RegisterRoute("SignInPage", typeof(SignInPage));
+        //Routing.RegisterRoute("SignUpPage", typeof(SignUpPage));
+        //Routing.RegisterRoute("WelcomeMessagePage", typeof(WelcomeMessagePage));
 
         // Navigate to splash screen at startup
         GoToAsync("//SplashPage");

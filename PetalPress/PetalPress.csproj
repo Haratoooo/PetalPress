@@ -65,9 +65,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Resources\Styles\Theme.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Views\Auth\GetStartedPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -131,15 +128,6 @@
 	  <MauiXaml Update="Views\Search\SearchPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Views\Auth\" />
-	  <Folder Include="Views\Journals\" />
-	  <Folder Include="Views\Mood\" />
-	  <Folder Include="Views\Home\" />
-	  <Folder Include="Views\Search\" />
-	  <Folder Include="Views\Preferences\" />
 	</ItemGroup>
 
 </Project>
