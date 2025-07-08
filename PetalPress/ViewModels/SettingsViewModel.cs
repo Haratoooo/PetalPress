@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PetalPress.ViewModels
 {
-    internal class JournalViewModel
+    internal class SettingsViewModel
     {
     }
 }
