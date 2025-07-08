@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PetalPress.Views.Onboarding.WelcomeMessagePage"
+             BackgroundImageSource="Images/petal_background.png"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Transparent">
+
+    <Grid>
+        <!-- Gradient background (optional fallback if image fails) -->
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#D48CE2" Offset="0.0" />
+                <GradientStop Color="#8E44AD" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="30">
+
+            <Label Text="Welcome to"
+                   FontSize="18"
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+
+            <Label Text="PetalPress"
+                   FontSize="64"
+                   TextColor="White"
+                   FontFamily="DancingScript"  
+                HorizontalOptions="Center"
+                   FontAttributes="Bold" />
+
+        </VerticalStackLayout>
+
+        <!-- Start Writing Button -->
+        <Button Text="Start Writing"
+                Clicked="OnStartWritingClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Margin="0,0,0,60"
+                BackgroundColor="Transparent"
+                BorderColor="White"
+                BorderWidth="2"
+                TextColor="White"
+                FontSize="18"
+                WidthRequest="250"
+                HeightRequest="55"
+                CornerRadius="30" />
+    </Grid>
+</ContentPage>
